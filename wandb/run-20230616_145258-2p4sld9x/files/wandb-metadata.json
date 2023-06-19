@@ -1,0 +1,224 @@
+{
+    "os": "Linux-6.2.0-20-generic-x86_64-with-glibc2.37",
+    "python": "3.9.16",
+    "heartbeatAt": "2023-06-16T06:53:00.499072",
+    "startedAt": "2023-06-16T06:52:58.880056",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--do_train",
+        "--dataset",
+        "estate_reward",
+        "--finetuning_type",
+        "lora",
+        "--model_name_or_path",
+        "/home/xxm/model/new/chatglm-6b",
+        "--output_dir",
+        "/home/xxm/\u4e0b\u8f7d/chatglm_project/ChatGLM-Efficient-Tuning/output/lora_estate_rm",
+        "--per_device_train_batch_size",
+        "4",
+        "--gradient_accumulation_steps",
+        "4",
+        "--lr_scheduler_type",
+        "cosine",
+        "--logging_steps",
+        "10",
+        "--save_steps",
+        "100",
+        "--learning_rate",
+        "1e-5",
+        "--num_train_epochs",
+        "1.0",
+        "--fp16"
+    ],
+    "state": "running",
+    "program": "/home/xxm/\u4e0b\u8f7d/chatglm_project/ChatGLM-Efficient-Tuning/src/train_rm.py",
+    "codePath": "src/train_rm.py",
+    "host": "xxm-System-Product-Name",
+    "username": "xxm",
+    "executable": "/home/xxm/anaconda3/envs/deepspeed/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 3048.8077499999995,
+        "min": 3000.0,
+        "max": 4500.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 2993.393,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4841.199,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 5211.635,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 2753.123,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4500.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 5375.423,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3901.237,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 2795.245,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 2967.337,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 2902.857,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 2872.372,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4429.888,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 2788.628,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 3000.0,
+            "max": 4500.0
+        }
+    ],
+    "disk": {
+        "total": 914.7823104858398,
+        "used": 596.0529289245605
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 125.50924301147461
+    }
+}

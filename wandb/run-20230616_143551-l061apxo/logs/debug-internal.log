@@ -1,0 +1,907 @@
+2023-06-16 14:35:51,548 INFO    StreamThr :14849 [internal.py:wandb_internal():86] W&B internal server running at pid: 14849, started at: 2023-06-16 14:35:51.548718
+2023-06-16 14:35:51,549 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status
+2023-06-16 14:35:51,560 INFO    WriterThread:14849 [datastore.py:open_for_write():85] open: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/run-l061apxo.wandb
+2023-06-16 14:35:51,560 DEBUG   SenderThread:14849 [sender.py:send():375] send: header
+2023-06-16 14:35:51,560 DEBUG   SenderThread:14849 [sender.py:send():375] send: run
+2023-06-16 14:35:52,236 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: check_version
+2023-06-16 14:35:52,237 INFO    SenderThread:14849 [dir_watcher.py:__init__():219] watching files in: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files
+2023-06-16 14:35:52,237 INFO    SenderThread:14849 [sender.py:_start_run_threads():1124] run started: l061apxo with start time 1686897351.55724
+2023-06-16 14:35:52,237 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:35:52,237 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:35:52,237 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: check_version
+2023-06-16 14:35:53,238 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_created():278] file/dir created: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:35:57,236 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-16 14:35:57,238 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:35:57,285 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: run_start
+2023-06-16 14:35:57,289 DEBUG   HandlerThread:14849 [system_info.py:__init__():31] System info init
+2023-06-16 14:35:57,289 DEBUG   HandlerThread:14849 [system_info.py:__init__():46] System info init done
+2023-06-16 14:35:57,289 INFO    HandlerThread:14849 [system_monitor.py:start():181] Starting system monitor
+2023-06-16 14:35:57,290 INFO    SystemMonitor:14849 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-16 14:35:57,290 INFO    HandlerThread:14849 [system_monitor.py:probe():201] Collecting system info
+2023-06-16 14:35:57,290 INFO    SystemMonitor:14849 [interfaces.py:start():190] Started cpu monitoring
+2023-06-16 14:35:57,291 INFO    SystemMonitor:14849 [interfaces.py:start():190] Started disk monitoring
+2023-06-16 14:35:57,291 INFO    SystemMonitor:14849 [interfaces.py:start():190] Started gpu monitoring
+2023-06-16 14:35:57,292 INFO    SystemMonitor:14849 [interfaces.py:start():190] Started memory monitoring
+2023-06-16 14:35:57,292 INFO    SystemMonitor:14849 [interfaces.py:start():190] Started network monitoring
+2023-06-16 14:35:57,301 DEBUG   HandlerThread:14849 [system_info.py:probe():195] Probing system
+2023-06-16 14:35:57,304 DEBUG   HandlerThread:14849 [git.py:repo():40] git repository is invalid
+2023-06-16 14:35:57,304 DEBUG   HandlerThread:14849 [system_info.py:probe():240] Probing system done
+2023-06-16 14:35:57,304 DEBUG   HandlerThread:14849 [system_monitor.py:probe():210] {'os': 'Linux-6.2.0-20-generic-x86_64-with-glibc2.37', 'python': '3.9.16', 'heartbeatAt': '2023-06-16T06:35:57.301171', 'startedAt': '2023-06-16T06:35:51.543589', 'docker': None, 'cuda': None, 'args': ('--do_train', '--dataset', 'estate_reward', '--finetuning_type', 'lora', '--model_name_or_path', '/home/xxm/model/new/chatglm-6b', '--output_dir', '/home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/output/lora_estate_rm', '--per_device_train_batch_size', '4', '--gradient_accumulation_steps', '4', '--lr_scheduler_type', 'cosine', '--logging_steps', '10', '--save_steps', '100', '--learning_rate', '1e-5', '--num_train_epochs', '5.0', '--fp16'), 'state': 'running', 'program': '/home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/src/train_rm.py', 'codePath': 'src/train_rm.py', 'host': 'xxm-System-Product-Name', 'username': 'xxm', 'executable': '/home/xxm/anaconda3/envs/deepspeed/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3058.1316874999998, 'min': 3000.0, 'max': 4500.0}, 'cpu_freq_per_core': [{'current': 3277.053, 'min': 3000.0, 'max': 4500.0}, {'current': 2806.001, 'min': 3000.0, 'max': 4500.0}, {'current': 4530.535, 'min': 3000.0, 'max': 4500.0}, {'current': 2757.821, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 2840.203, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 2994.47, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 3312.737, 'min': 3000.0, 'max': 4500.0}, {'current': 2855.252, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 3139.122, 'min': 3000.0, 'max': 4500.0}, {'current': 3272.1, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 3757.723, 'min': 3000.0, 'max': 4500.0}, {'current': 2924.736, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 2993.547, 'min': 3000.0, 'max': 4500.0}, {'current': 2802.863, 'min': 3000.0, 'max': 4500.0}, {'current': 2992.684, 'min': 3000.0, 'max': 4500.0}, {'current': 2883.886, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 2719.481, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}, {'current': 3000.0, 'min': 3000.0, 'max': 4500.0}], 'disk': {'total': 914.7823104858398, 'used': 596.043384552002}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 125.50924301147461}}
+2023-06-16 14:35:57,304 INFO    HandlerThread:14849 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-16 14:35:57,305 INFO    HandlerThread:14849 [system_monitor.py:probe():214] Publishing system info
+2023-06-16 14:35:57,305 DEBUG   HandlerThread:14849 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-16 14:35:57,305 DEBUG   HandlerThread:14849 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-16 14:35:57,305 DEBUG   HandlerThread:14849 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-06-16 14:35:58,238 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_created():278] file/dir created: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/conda-environment.yaml
+2023-06-16 14:35:58,239 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_created():278] file/dir created: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/requirements.txt
+2023-06-16 14:35:59,369 DEBUG   HandlerThread:14849 [system_info.py:_save_conda():86] Saving conda packages done
+2023-06-16 14:35:59,370 INFO    HandlerThread:14849 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-16 14:35:59,382 DEBUG   SenderThread:14849 [sender.py:send():375] send: files
+2023-06-16 14:35:59,382 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-06-16 14:35:59,385 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:35:59,385 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:35:59,777 DEBUG   SenderThread:14849 [sender.py:send():375] send: telemetry
+2023-06-16 14:35:59,778 DEBUG   SenderThread:14849 [sender.py:send():375] send: config
+2023-06-16 14:35:59,778 DEBUG   SenderThread:14849 [sender.py:send():375] send: metric
+2023-06-16 14:35:59,778 DEBUG   SenderThread:14849 [sender.py:send():375] send: telemetry
+2023-06-16 14:35:59,778 DEBUG   SenderThread:14849 [sender.py:send():375] send: metric
+2023-06-16 14:35:59,778 WARNING SenderThread:14849 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-06-16 14:36:00,217 INFO    wandb-upload_0:14849 [upload_job.py:push():137] Uploaded file /tmp/tmpfsvpmii6wandb/v7q7lwaz-wandb-metadata.json
+2023-06-16 14:36:00,239 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/conda-environment.yaml
+2023-06-16 14:36:00,239 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_created():278] file/dir created: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:00,239 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_created():278] file/dir created: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-metadata.json
+2023-06-16 14:36:02,239 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:02,779 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:36:06,240 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:08,227 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:36:10,241 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:13,335 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:36:14,385 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:36:14,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:36:16,242 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:18,242 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:18,473 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:36:22,243 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:24,053 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:36:24,244 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:25,244 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/config.yaml
+2023-06-16 14:36:28,245 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:29,385 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:36:29,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:36:29,641 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:36:30,245 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:34,246 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:34,702 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:36:35,089 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:36:35,090 DEBUG   SenderThread:14849 [sender.py:send():375] send: metric
+2023-06-16 14:36:35,090 DEBUG   SenderThread:14849 [sender.py:send():375] send: metric
+2023-06-16 14:36:35,091 DEBUG   SenderThread:14849 [sender.py:send():375] send: metric
+2023-06-16 14:36:35,091 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:36:35,091 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:36:35,091 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:36:35,246 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:36:36,246 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:37,246 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:40,247 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:40,555 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:36:42,247 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:44,385 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:36:44,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:36:46,138 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:36:46,248 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:50,249 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:51,359 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:36:52,250 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:57,292 DEBUG   SystemMonitor:14849 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-16 14:36:57,293 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:36:57,297 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:36:58,251 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:36:58,251 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/config.yaml
+2023-06-16 14:36:59,385 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:36:59,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:37:02,252 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:02,941 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:37:06,253 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:07,984 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:37:12,254 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:13,057 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:37:14,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:37:14,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:37:15,495 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:37:15,504 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:37:15,504 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:37:15,505 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:37:16,255 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:16,255 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:37:17,255 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:18,505 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:37:22,256 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:24,269 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:37:26,257 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:27,294 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:37:29,294 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:37:29,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:37:29,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:37:32,258 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:34,259 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:34,420 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:37:39,659 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:37:40,260 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:44,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:37:44,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:37:45,642 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:37:46,261 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:50,262 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:51,127 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:37:54,263 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:57,042 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:37:57,294 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:37:58,264 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:37:59,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:37:59,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:38:01,725 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:38:01,726 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:38:01,726 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:38:01,726 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:38:02,265 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:02,265 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:38:02,727 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:38:03,265 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:06,266 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:08,424 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:38:10,267 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:13,704 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:38:14,268 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:14,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:38:14,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:38:18,269 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:18,943 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:38:20,269 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:24,437 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:38:26,270 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:27,295 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:38:29,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:38:29,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:38:29,642 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:38:30,271 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:34,272 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:35,051 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:38:38,273 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:40,067 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:38:40,613 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:38:40,614 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:38:40,614 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:38:40,616 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:38:41,274 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:41,274 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:38:42,274 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:44,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:38:44,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:38:45,818 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:38:46,275 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:50,276 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:51,543 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:38:54,277 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:57,059 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:38:57,295 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:38:58,278 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:38:59,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:38:59,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:39:02,279 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:02,889 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:39:06,280 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:08,267 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:39:12,281 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:14,062 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:39:14,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:39:14,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:39:16,282 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:18,282 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:19,126 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:39:20,150 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:39:20,151 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:39:20,151 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:39:20,151 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:39:20,283 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:39:21,283 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:22,283 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:24,284 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:24,669 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:39:27,296 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:39:29,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:39:29,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:39:30,285 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:30,639 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:39:32,286 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:36,230 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:39:40,287 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:41,844 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:39:44,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:39:44,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:39:46,289 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:47,796 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:39:50,290 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:52,988 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:39:54,291 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:57,297 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:39:58,291 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:39:58,586 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:39:59,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:39:59,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:40:04,255 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:40:04,293 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:08,508 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:40:08,509 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:40:08,509 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:40:08,509 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:40:09,294 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:09,294 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:40:09,523 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:40:10,294 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:14,295 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:14,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:40:14,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:40:14,631 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:40:16,295 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:20,055 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:40:22,297 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:25,095 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:40:26,298 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:27,297 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:40:29,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:40:29,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:40:30,339 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:40:32,299 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:35,339 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:40:36,300 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:40,301 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:41,144 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:40:44,302 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:44,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:40:44,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:40:46,302 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:46,515 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:40:50,290 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:40:50,291 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:40:50,291 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:40:50,292 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:40:50,303 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:40:52,292 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:40:52,303 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:56,304 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:40:57,298 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:40:57,298 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:40:59,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:40:59,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:41:00,305 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:02,633 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:41:06,307 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:07,799 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:41:10,308 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:12,308 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:13,693 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:41:14,309 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:14,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:41:14,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:41:18,309 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:18,867 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:41:22,310 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:24,262 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:41:24,311 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:27,298 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:41:28,658 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:41:28,658 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:41:28,659 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:41:28,659 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:41:29,312 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:41:29,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:41:29,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:41:29,658 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:41:30,312 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:34,868 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:41:36,313 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:40,314 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:40,497 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:41:44,315 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:44,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:41:44,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:41:45,639 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:41:48,316 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:51,579 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:41:54,317 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:57,128 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:41:57,299 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:41:58,318 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:41:59,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:41:59,388 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:42:02,318 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:02,921 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:42:06,319 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:08,326 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:42:10,320 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:12,279 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:42:12,280 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:42:12,281 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:42:12,281 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:42:12,321 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:42:14,281 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:42:14,321 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:14,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:42:14,388 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:42:16,321 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:18,322 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:20,280 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:42:22,323 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:24,323 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:25,844 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:42:27,299 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:42:28,324 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:29,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:42:29,388 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:42:31,642 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:42:34,325 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:37,189 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:42:38,326 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:42,327 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:42,806 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:42:44,327 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:44,388 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:42:44,388 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:42:46,346 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:42:46,347 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:42:46,347 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:42:46,347 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:42:47,328 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:42:48,328 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:48,348 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:42:52,329 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:53,700 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:42:54,329 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:57,300 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:42:58,330 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:42:59,300 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:42:59,388 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:42:59,388 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:43:04,331 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:04,511 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:43:06,332 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:09,796 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:43:12,333 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:14,388 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:43:14,388 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:43:15,644 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:43:16,333 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:18,334 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:21,593 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:43:22,335 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:26,605 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:43:26,697 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:43:26,698 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:43:26,698 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:43:26,699 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:43:27,301 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:43:27,336 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:43:28,336 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:29,388 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:43:29,388 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:43:30,336 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:31,650 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:43:34,337 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:37,326 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:43:38,338 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:42,339 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:42,964 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:43:44,388 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:43:44,388 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:43:46,340 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:48,340 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:48,497 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:43:54,019 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:43:54,341 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:43:57,301 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:43:59,388 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:43:59,388 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:43:59,633 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:44:00,342 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:02,343 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:05,430 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:44:06,688 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:44:06,689 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:44:06,689 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:44:06,689 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:44:07,344 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:44:08,344 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:10,345 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:11,390 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:44:14,345 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:14,388 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:44:14,388 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:44:16,346 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:16,717 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:44:20,347 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:22,058 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:44:24,348 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:27,108 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:44:27,302 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:44:28,349 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:29,388 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:44:29,389 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:44:32,635 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:44:34,350 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:36,350 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:37,798 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:44:42,351 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:43,222 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:44:43,272 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:44:43,273 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:44:43,274 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:44:43,274 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:44:43,352 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:44:44,352 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:44,388 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:44:44,389 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:44:46,352 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:48,924 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:44:50,354 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:53,355 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:54,614 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:44:55,355 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:57,302 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:44:59,356 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:44:59,388 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:44:59,389 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:44:59,636 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:45:03,357 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:04,777 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:45:07,358 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:10,360 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:45:11,358 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:14,388 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:45:14,389 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:45:15,359 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:15,645 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:45:21,350 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:45:21,361 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:22,355 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:45:22,356 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:45:22,357 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:45:22,357 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:45:22,361 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:45:24,361 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:25,361 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:27,303 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:45:27,303 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:45:27,362 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:29,389 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:45:29,389 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:45:31,363 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:32,654 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:45:35,363 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:38,041 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:45:39,364 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:41,365 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:43,821 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:45:44,389 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:45:44,389 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:45:45,366 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:48,913 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:45:49,367 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:53,368 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:54,467 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:45:57,303 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:45:57,369 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:45:59,389 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:45:59,389 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:45:59,643 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:45:59,870 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:45:59,871 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:45:59,871 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:45:59,872 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:46:00,369 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:46:01,369 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:02,370 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:05,370 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:05,510 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:46:11,210 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:46:11,372 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:14,389 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:46:14,390 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:46:15,373 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:16,613 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:46:19,373 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:22,487 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:46:23,374 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:27,304 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:46:27,375 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:28,304 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:46:29,389 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:46:29,389 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:46:31,376 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:33,377 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:33,880 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:46:39,378 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:39,794 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:46:40,156 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:46:40,156 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:46:40,157 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:46:40,157 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:46:40,378 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:46:42,379 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:43,379 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:44,389 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:46:44,390 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:46:45,689 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:46:47,380 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:49,380 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:51,381 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:51,602 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:46:55,382 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:56,641 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:46:57,304 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:46:57,382 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:46:59,389 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:46:59,390 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:47:02,091 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:47:03,384 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:05,384 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:07,385 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:08,022 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:47:13,386 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:13,728 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:47:14,389 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:47:14,390 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:47:14,902 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:47:14,903 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:47:14,904 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:47:14,904 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:47:15,386 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:47:16,387 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:17,387 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:18,905 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:47:21,388 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:24,496 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:47:25,389 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:27,305 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:47:27,389 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:29,390 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:47:29,390 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:47:29,655 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:47:31,390 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:35,321 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:47:35,391 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:39,392 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:40,444 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:47:41,392 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:44,390 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:47:44,390 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:47:45,393 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:45,590 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:47:47,393 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:48,902 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:47:48,903 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:47:48,903 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:47:48,903 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:47:49,394 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:47:50,394 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:50,903 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:47:51,394 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:53,395 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:56,444 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:47:57,305 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:47:57,396 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:47:59,390 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:47:59,390 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:48:01,994 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:48:03,397 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:07,398 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:07,663 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:48:11,399 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:13,089 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:48:13,399 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:14,390 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:48:14,390 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:48:18,494 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:48:19,400 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:23,401 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:24,062 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:48:27,306 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:48:27,402 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:28,057 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:48:28,058 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:48:28,058 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:48:28,058 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:48:28,402 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:48:29,390 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:48:29,390 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:48:29,402 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:29,645 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:48:30,403 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:33,403 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:35,169 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:48:37,404 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:40,995 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:48:41,405 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:44,390 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:48:44,390 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:48:45,406 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:46,496 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:48:47,406 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:51,407 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:51,588 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:48:53,407 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:48:56,817 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:48:57,306 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:48:59,390 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:48:59,390 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:48:59,409 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:01,409 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:02,571 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:49:02,571 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:49:02,572 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:49:02,572 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:49:02,573 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:49:03,410 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:49:04,410 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:05,410 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:08,518 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:49:09,411 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:13,412 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:13,599 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:49:14,390 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:49:14,391 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:49:15,412 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:18,718 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:49:19,413 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:24,076 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:49:25,414 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:27,307 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:49:27,415 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:29,390 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:49:29,390 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:49:29,415 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:29,648 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:49:33,416 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:34,851 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:49:37,417 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:37,505 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:49:37,505 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:49:37,506 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:49:37,506 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:49:38,417 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:49:39,417 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:40,418 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:40,663 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:49:41,418 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:44,390 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:49:44,391 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:49:46,081 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:49:47,419 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:51,330 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:49:51,420 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:53,420 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:57,136 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:49:57,307 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:49:57,421 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:49:59,390 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:49:59,391 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:50:01,422 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:02,748 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:50:05,423 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:07,834 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:50:09,423 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:12,907 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:50:13,424 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:14,390 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:50:14,391 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:50:15,365 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:50:15,366 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:50:15,366 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:50:15,366 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:50:15,425 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:50:16,425 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:17,425 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:18,367 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:50:21,426 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:23,393 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:50:25,427 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:27,308 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:50:29,309 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:50:29,391 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:50:29,391 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:50:29,428 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:33,429 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:34,955 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:50:35,429 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:39,430 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:40,032 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:50:41,430 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:44,391 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:50:44,391 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:50:45,819 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:50:47,431 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:51,135 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:50:51,432 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:54,621 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:50:54,622 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:50:54,622 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:50:54,623 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:50:55,433 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:50:56,434 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:56,623 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:50:57,309 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:50:57,434 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:50:59,391 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:50:59,391 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:51:01,435 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:01,639 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:51:03,435 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:06,878 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:51:07,436 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:11,437 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:12,328 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:51:14,391 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:51:14,391 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:51:15,437 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:17,438 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:17,835 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:51:19,438 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:23,298 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:51:23,439 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:27,309 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:51:28,341 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:51:29,391 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:51:29,391 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:51:29,441 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:30,432 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-16 14:51:30,433 DEBUG   SenderThread:14849 [sender.py:send():375] send: history
+2023-06-16 14:51:30,433 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: summary_record
+2023-06-16 14:51:30,434 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:51:30,441 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:51:32,441 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:33,434 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:51:33,441 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:39,425 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:51:39,443 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:41,443 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:44,391 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-16 14:51:44,391 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: stop_status
+2023-06-16 14:51:44,636 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:51:47,445 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:49,445 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:50,212 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:51:52,340 DEBUG   SenderThread:14849 [sender.py:send():375] send: exit
+2023-06-16 14:51:52,340 INFO    SenderThread:14849 [sender.py:send_exit():598] handling exit code: 255
+2023-06-16 14:51:52,340 INFO    SenderThread:14849 [sender.py:send_exit():600] handling runtime: 955
+2023-06-16 14:51:52,341 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:51:52,341 INFO    SenderThread:14849 [sender.py:send_exit():606] send defer
+2023-06-16 14:51:52,341 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:52,341 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 0
+2023-06-16 14:51:52,341 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:52,341 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-06-16 14:51:52,341 INFO    SenderThread:14849 [sender.py:transition_state():626] send defer: 1
+2023-06-16 14:51:52,341 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:52,341 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 1
+2023-06-16 14:51:52,341 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:52,341 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-06-16 14:51:52,341 INFO    SenderThread:14849 [sender.py:transition_state():626] send defer: 2
+2023-06-16 14:51:52,342 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:52,342 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 2
+2023-06-16 14:51:52,342 INFO    HandlerThread:14849 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-16 14:51:52,342 DEBUG   SystemMonitor:14849 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-16 14:51:52,342 DEBUG   SystemMonitor:14849 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-16 14:51:52,343 INFO    HandlerThread:14849 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-16 14:51:52,343 INFO    HandlerThread:14849 [interfaces.py:finish():202] Joined disk monitor
+2023-06-16 14:51:52,385 INFO    HandlerThread:14849 [interfaces.py:finish():202] Joined gpu monitor
+2023-06-16 14:51:52,385 INFO    HandlerThread:14849 [interfaces.py:finish():202] Joined memory monitor
+2023-06-16 14:51:52,385 INFO    HandlerThread:14849 [interfaces.py:finish():202] Joined network monitor
+2023-06-16 14:51:52,385 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:52,385 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-06-16 14:51:52,385 INFO    SenderThread:14849 [sender.py:transition_state():626] send defer: 3
+2023-06-16 14:51:52,385 DEBUG   SenderThread:14849 [sender.py:send():375] send: stats
+2023-06-16 14:51:52,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:52,386 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 3
+2023-06-16 14:51:52,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:52,386 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-06-16 14:51:52,386 INFO    SenderThread:14849 [sender.py:transition_state():626] send defer: 4
+2023-06-16 14:51:52,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:52,386 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 4
+2023-06-16 14:51:52,386 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:52,386 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-06-16 14:51:52,386 INFO    SenderThread:14849 [sender.py:transition_state():626] send defer: 5
+2023-06-16 14:51:52,386 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:52,386 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 5
+2023-06-16 14:51:52,387 DEBUG   SenderThread:14849 [sender.py:send():375] send: summary
+2023-06-16 14:51:52,387 INFO    SenderThread:14849 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-06-16 14:51:52,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:52,387 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-06-16 14:51:52,387 INFO    SenderThread:14849 [sender.py:transition_state():626] send defer: 6
+2023-06-16 14:51:52,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:52,387 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 6
+2023-06-16 14:51:52,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:52,387 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-06-16 14:51:52,387 INFO    SenderThread:14849 [sender.py:transition_state():626] send defer: 7
+2023-06-16 14:51:52,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: status_report
+2023-06-16 14:51:52,387 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:52,387 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 7
+2023-06-16 14:51:52,387 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:52,387 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-06-16 14:51:52,446 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:51:53,317 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-16 14:51:53,446 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:53,969 INFO    SenderThread:14849 [sender.py:transition_state():626] send defer: 8
+2023-06-16 14:51:53,969 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: poll_exit
+2023-06-16 14:51:53,969 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:53,969 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 8
+2023-06-16 14:51:53,970 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:53,970 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-06-16 14:51:53,970 INFO    SenderThread:14849 [sender.py:transition_state():626] send defer: 9
+2023-06-16 14:51:53,970 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:53,970 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 9
+2023-06-16 14:51:53,970 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:53,970 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-06-16 14:51:53,970 INFO    SenderThread:14849 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-06-16 14:51:54,317 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-16 14:51:54,446 INFO    Thread-12 :14849 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:54,446 INFO    SenderThread:14849 [dir_watcher.py:finish():395] scan: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files
+2023-06-16 14:51:54,447 INFO    SenderThread:14849 [dir_watcher.py:finish():409] scan save: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-metadata.json wandb-metadata.json
+2023-06-16 14:51:54,447 INFO    SenderThread:14849 [dir_watcher.py:finish():409] scan save: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/config.yaml config.yaml
+2023-06-16 14:51:54,447 INFO    SenderThread:14849 [dir_watcher.py:finish():409] scan save: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json wandb-summary.json
+2023-06-16 14:51:54,447 INFO    SenderThread:14849 [dir_watcher.py:finish():409] scan save: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/requirements.txt requirements.txt
+2023-06-16 14:51:54,447 INFO    SenderThread:14849 [dir_watcher.py:finish():409] scan save: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log output.log
+2023-06-16 14:51:54,450 INFO    SenderThread:14849 [dir_watcher.py:finish():409] scan save: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/conda-environment.yaml conda-environment.yaml
+2023-06-16 14:51:54,452 INFO    SenderThread:14849 [sender.py:transition_state():626] send defer: 10
+2023-06-16 14:51:54,452 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: poll_exit
+2023-06-16 14:51:54,453 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:54,453 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 10
+2023-06-16 14:51:54,455 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:54,455 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-06-16 14:51:54,455 INFO    SenderThread:14849 [file_pusher.py:finish():167] shutting down file pusher
+2023-06-16 14:51:55,318 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-16 14:51:55,318 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: poll_exit
+2023-06-16 14:51:55,368 INFO    wandb-upload_1:14849 [upload_job.py:push():137] Uploaded file /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/wandb-summary.json
+2023-06-16 14:51:55,372 INFO    wandb-upload_2:14849 [upload_job.py:push():137] Uploaded file /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/requirements.txt
+2023-06-16 14:51:55,421 INFO    wandb-upload_0:14849 [upload_job.py:push():137] Uploaded file /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/config.yaml
+2023-06-16 14:51:55,438 INFO    wandb-upload_3:14849 [upload_job.py:push():137] Uploaded file /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/output.log
+2023-06-16 14:51:55,530 INFO    wandb-upload_4:14849 [upload_job.py:push():137] Uploaded file /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/files/conda-environment.yaml
+2023-06-16 14:51:55,730 INFO    Thread-11 :14849 [sender.py:transition_state():626] send defer: 11
+2023-06-16 14:51:55,730 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:55,730 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 11
+2023-06-16 14:51:55,731 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:55,731 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-06-16 14:51:55,731 INFO    SenderThread:14849 [file_pusher.py:join():172] waiting for file pusher
+2023-06-16 14:51:55,731 INFO    SenderThread:14849 [sender.py:transition_state():626] send defer: 12
+2023-06-16 14:51:55,731 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:55,731 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 12
+2023-06-16 14:51:55,731 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:55,731 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-06-16 14:51:56,319 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-16 14:51:57,029 INFO    SenderThread:14849 [sender.py:transition_state():626] send defer: 13
+2023-06-16 14:51:57,029 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: poll_exit
+2023-06-16 14:51:57,029 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:57,030 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 13
+2023-06-16 14:51:57,030 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:57,030 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-06-16 14:51:57,030 INFO    SenderThread:14849 [sender.py:transition_state():626] send defer: 14
+2023-06-16 14:51:57,030 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: defer
+2023-06-16 14:51:57,030 INFO    HandlerThread:14849 [handler.py:handle_request_defer():170] handle defer: 14
+2023-06-16 14:51:57,030 DEBUG   SenderThread:14849 [sender.py:send():375] send: final
+2023-06-16 14:51:57,030 DEBUG   SenderThread:14849 [sender.py:send():375] send: footer
+2023-06-16 14:51:57,030 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: defer
+2023-06-16 14:51:57,030 INFO    SenderThread:14849 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-06-16 14:51:57,031 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-16 14:51:57,031 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: poll_exit
+2023-06-16 14:51:57,031 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-16 14:51:57,031 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: poll_exit
+2023-06-16 14:51:57,031 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: server_info
+2023-06-16 14:51:57,031 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: get_summary
+2023-06-16 14:51:57,032 DEBUG   SenderThread:14849 [sender.py:send_request():402] send_request: server_info
+2023-06-16 14:51:57,033 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: sampled_history
+2023-06-16 14:51:57,513 INFO    MainThread:14849 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-06-16 14:51:57,513 INFO    MainThread:14849 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-06-16 14:51:57,513 INFO    MainThread:14849 [wandb_run.py:_footer_sync_info():3428] logging synced files
+2023-06-16 14:51:57,514 DEBUG   HandlerThread:14849 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-16 14:51:57,514 INFO    HandlerThread:14849 [handler.py:finish():845] shutting down handler
+2023-06-16 14:51:58,032 INFO    WriterThread:14849 [datastore.py:close():298] close: /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/wandb/run-20230616_143551-l061apxo/run-l061apxo.wandb
+2023-06-16 14:51:58,513 INFO    SenderThread:14849 [sender.py:finish():1550] shutting down sender
+2023-06-16 14:51:58,513 INFO    SenderThread:14849 [file_pusher.py:finish():167] shutting down file pusher
+2023-06-16 14:51:58,513 INFO    SenderThread:14849 [file_pusher.py:join():172] waiting for file pusher

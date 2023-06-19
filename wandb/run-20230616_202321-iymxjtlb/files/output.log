@@ -1,0 +1,194 @@
+06/16/2023 20:23:25 - INFO - utils.common - Loading dataset estate_reward.json...
+06/16/2023 20:23:25 - WARNING - utils.common - Checksum failed for data/estate_reward.json. It may vary depending on the platform.
+06/16/2023 20:23:26 - INFO - datasets.builder - Using custom data configuration default-82f79eeb47e46162
+06/16/2023 20:23:26 - INFO - datasets.info - Loading Dataset Infos from /home/xxm/anaconda3/envs/deepspeed/lib/python3.9/site-packages/datasets/packaged_modules/json
+06/16/2023 20:23:26 - INFO - datasets.builder - Overwrite dataset info from restored data version if exists.
+06/16/2023 20:23:26 - INFO - datasets.info - Loading Dataset info from /home/xxm/.cache/huggingface/datasets/json/default-82f79eeb47e46162/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4
+06/16/2023 20:23:26 - WARNING - datasets.builder - Found cached dataset json (/home/xxm/.cache/huggingface/datasets/json/default-82f79eeb47e46162/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4)
+06/16/2023 20:23:26 - INFO - datasets.info - Loading Dataset info from /home/xxm/.cache/huggingface/datasets/json/default-82f79eeb47e46162/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4
+100%|████████████████████████████████████████████| 1/1 [00:00<00:00, 820.00it/s]
+[INFO|tokenization_utils_base.py:1821] 2023-06-16 20:23:26,635 >> loading file ice_text.model
+[INFO|tokenization_utils_base.py:1821] 2023-06-16 20:23:26,635 >> loading file added_tokens.json
+[INFO|tokenization_utils_base.py:1821] 2023-06-16 20:23:26,635 >> loading file special_tokens_map.json
+[INFO|tokenization_utils_base.py:1821] 2023-06-16 20:23:26,635 >> loading file tokenizer_config.json
+[INFO|configuration_utils.py:667] 2023-06-16 20:23:26,732 >> loading configuration file /home/xxm/model/new/chatglm-6b/config.json
+[INFO|configuration_utils.py:667] 2023-06-16 20:23:26,733 >> loading configuration file /home/xxm/model/new/chatglm-6b/config.json
+[INFO|configuration_utils.py:725] 2023-06-16 20:23:26,733 >> Model config ChatGLMConfig {
+  "_name_or_path": "/home/xxm/model/new/chatglm-6b",
+  "architectures": [
+    "ChatGLMModel"
+  ],
+  "auto_map": {
+    "AutoConfig": "configuration_chatglm.ChatGLMConfig",
+    "AutoModel": "modeling_chatglm.ChatGLMForConditionalGeneration",
+    "AutoModelForSeq2SeqLM": "modeling_chatglm.ChatGLMForConditionalGeneration"
+  },
+  "bos_token_id": 130004,
+  "eos_token_id": 130005,
+  "gmask_token_id": 130001,
+  "hidden_size": 4096,
+  "inner_hidden_size": 16384,
+  "layernorm_epsilon": 1e-05,
+  "mask_token_id": 130000,
+  "max_sequence_length": 2048,
+  "model_type": "chatglm",
+  "num_attention_heads": 32,
+  "num_layers": 28,
+  "pad_token_id": 3,
+  "position_encoding_2d": true,
+  "pre_seq_len": null,
+  "prefix_projection": false,
+  "quantization_bit": 0,
+  "torch_dtype": "float16",
+  "transformers_version": "4.30.2",
+  "use_cache": true,
+  "vocab_size": 130528
+}
+[INFO|modeling_utils.py:2575] 2023-06-16 20:23:26,760 >> loading weights file /home/xxm/model/new/chatglm-6b/pytorch_model.bin.index.json
+[INFO|configuration_utils.py:577] 2023-06-16 20:23:26,761 >> Generate config GenerationConfig {
+  "_from_model_config": true,
+  "bos_token_id": 130004,
+  "eos_token_id": 130005,
+  "pad_token_id": 3,
+  "transformers_version": "4.30.2"
+}
+
+Loading checkpoint shards: 100%|██████████████████| 8/8 [00:04<00:00,  1.67it/s]
+[INFO|modeling_utils.py:3295] 2023-06-16 20:23:31,587 >> All model checkpoint weights were used when initializing ChatGLMForConditionalGeneration.
+[INFO|modeling_utils.py:3303] 2023-06-16 20:23:31,587 >> All the weights of ChatGLMForConditionalGeneration were initialized from the model checkpoint at /home/xxm/model/new/chatglm-6b.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use ChatGLMForConditionalGeneration for predictions without further training.
+[INFO|modeling_utils.py:2927] 2023-06-16 20:23:31,588 >> Generation config file not found, using a generation config created from the model config.
+06/16/2023 20:23:31 - INFO - utils.common - Fine-tuning method: LoRA
+trainable params: 3674113 || all params: 6176960513 || trainable%: 0.0595
+06/16/2023 20:23:39 - WARNING - datasets.arrow_dataset - Loading cached processed dataset at /home/xxm/.cache/huggingface/datasets/json/default-82f79eeb47e46162/0.0.0/e347ab1c932092252e717ff3f949105a4dd28b27e842dd53157d2f72e276c2e4/cache-4c05c94403c69afe.arrow
+accept_ids:
+[70375, 66907, 63882, 6, 109389, 64708, 76358, 64185, 6, 65610, 64067, 63878, 63964, 31, 130001, 130004, 5, 109389, 64708, 64683, 68848, 64134, 88192, 64188, 6, 68848, 107472, 64722, 78577, 66024, 6, 63827, 68183, 71157, 64134, 63826, 64041, 64718, 65852, 6, 64910, 65860, 6, 85599, 63850, 6, 75414, 70298, 6, 64381, 64274, 67197, 64127, 6, 104950, 64004, 65555, 6, 64021, 69229, 116541, 73077, 63823, 64006, 64038, 21, 101532, 10, 18, 11, 13, 8, 64789, 69939, 67322, 6, 86484, 67207, 6, 65494, 65710, 64318, 6, 64144, 63943, 85312, 13, 7, 10, 64005, 26, 143, 10, 6, 89365, 63827, 86091, 63967, 85055, 67264, 83891, 64803, 64611, 6, 64067, 64112, 90384, 80280, 80917, 130005]
+accepts:
+黄博士好,星河时代地理位置如何,纯投资可以吗? 星河时代位于浦口城南中心,浦口区重点打造的板块,在长江隧道口和五桥中间,规划不错,发展空间大,颇有潜力,不过目前配套一般,需要时间发展完善,而且靠近安置房片区。项目只有6栋楼29-30层高层住宅,体量不大,加上装修包,价格已经逼近3.2万/m2,比较适合在江北或者河西工作的刚需客群,投资的话能接受长线可以考虑
+reject_ids:
+[70375, 66907, 63882, 6, 109389, 64708, 76358, 64185, 6, 65610, 64067, 63878, 63964, 31, 130001, 130004, 70375, 66907, 63882, 6, 109389, 64708, 64683, 63883, 70941, 87557, 6, 85895, 65610, 64067, 63823, 130005]
+rejects:
+黄博士好,星河时代地理位置如何,纯投资可以吗? 黄博士好,星河时代位于中国湖南省长沙市,可以进行纯投资。
+06/16/2023 20:23:40 - WARNING - utils.peft_trainer - Previous log file in this folder will be deleted.
+[INFO|trainer.py:1786] 2023-06-16 20:23:40,906 >> ***** Running training *****
+[INFO|trainer.py:1787] 2023-06-16 20:23:40,907 >>   Num examples = 4,998
+[INFO|trainer.py:1788] 2023-06-16 20:23:40,907 >>   Num Epochs = 10
+[INFO|trainer.py:1789] 2023-06-16 20:23:40,907 >>   Instantaneous batch size per device = 4
+[INFO|trainer.py:1790] 2023-06-16 20:23:40,907 >>   Total train batch size (w. parallel, distributed & accumulation) = 16
+[INFO|trainer.py:1791] 2023-06-16 20:23:40,907 >>   Gradient Accumulation steps = 4
+[INFO|trainer.py:1792] 2023-06-16 20:23:40,907 >>   Total optimization steps = 3,120
+[INFO|trainer.py:1793] 2023-06-16 20:23:40,907 >>   Number of trainable parameters = 3,674,113
+[INFO|integrations.py:727] 2023-06-16 20:23:40,909 >> Automatic Weights & Biases logging enabled, to disable set os.environ["WANDB_DISABLED"] = "true"
+
+
+
+
+
+
+
+  0%|                                        | 7/3120 [00:28<3:14:08,  3.74s/it]Traceback (most recent call last):
+  File "/home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/src/train_rm.py", line 105, in <module>
+    main()
+  File "/home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/src/train_rm.py", line 84, in main
+    train_result = trainer.train()
+  File "/home/xxm/anaconda3/envs/deepspeed/lib/python3.9/site-packages/transformers/trainer.py", line 1645, in train
+    return inner_training_loop(
+  File "/home/xxm/anaconda3/envs/deepspeed/lib/python3.9/site-packages/transformers/trainer.py", line 1938, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/xxm/anaconda3/envs/deepspeed/lib/python3.9/site-packages/transformers/trainer.py", line 2770, in training_step
+    self.accelerator.backward(loss)
+  File "/home/xxm/anaconda3/envs/deepspeed/lib/python3.9/site-packages/accelerate/accelerator.py", line 1819, in backward
+    self.scaler.scale(loss).backward(**kwargs)
+  File "/home/xxm/anaconda3/envs/deepspeed/lib/python3.9/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home/xxm/anaconda3/envs/deepspeed/lib/python3.9/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+[31m╭───────────────────── [39m[1mTraceback (most recent call last)[31m[22m ──────────────────────╮
+[31m│[39m /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/src/[1mtrain_rm.py[22m:[94m105[39m  [31m│
+[31m│[39m in [92m<module>[39m                                                                  [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m   102                                                                        [31m│
+[31m│[39m   103                                                                        [31m│
+[31m│[39m   104 [94mif[39m [91m__name__[39m == [33m"__main__"[39m:                                             [31m│
+[31m│[39m [31m❱ [39m105 │   main()                                                             [31m│
+[31m│[39m   106                                                                        [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/src/[1mtrain_rm.py[22m:[94m84[39m   [31m│
+[31m│[39m in [92mmain[39m                                                                      [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m    81 │                                                                      [31m│
+[31m│[39m    82 │   # Training                                                         [31m│
+[31m│[39m    83 │   [94mif[39m training_args.do_train:                                         [31m│
+[31m│[39m [31m❱ [39m 84 │   │   train_result = trainer.train()                                 [31m│
+[31m│[39m    85 │   │   trainer.log_metrics([33m"train"[39m, train_result.metrics)             [31m│
+[31m│[39m    86 │   │   trainer.save_metrics([33m"train"[39m, train_result.metrics)            [31m│
+[31m│[39m    87 │   │   trainer.save_state()                                           [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m /home/xxm/anaconda3/envs/deepspeed/lib/python3.9/site-packages/transformers/ [31m│
+[31m│[39m [1mtrainer.py[22m:[94m1645[39m in [92mtrain[39m                                                     [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m   1642 │   │   inner_training_loop = find_executable_batch_size(             [31m│
+[31m│[39m   1643 │   │   │   [96mself[39m._inner_training_loop, [96mself[39m._train_batch_size, args.a [31m│
+[31m│[39m   1644 │   │   )                                                             [31m│
+[31m│[39m [31m❱ [39m1645 │   │   [94mreturn[39m inner_training_loop(                                   [31m│
+[31m│[39m   1646 │   │   │   args=args,                                                [31m│
+[31m│[39m   1647 │   │   │   resume_from_checkpoint=resume_from_checkpoint,            [31m│
+[31m│[39m   1648 │   │   │   trial=trial,                                              [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m /home/xxm/anaconda3/envs/deepspeed/lib/python3.9/site-packages/transformers/ [31m│
+[31m│[39m [1mtrainer.py[22m:[94m1938[39m in [92m_inner_training_loop[39m                                      [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m   1935 │   │   │   │   │   [96mself[39m.control = [96mself[39m.callback_handler.on_step_begi [31m│
+[31m│[39m   1936 │   │   │   │                                                         [31m│
+[31m│[39m   1937 │   │   │   │   [94mwith[39m [96mself[39m.accelerator.accumulate(model):              [31m│
+[31m│[39m [31m❱ [39m1938 │   │   │   │   │   tr_loss_step = [96mself[39m.training_step(model, inputs)  [31m│
+[31m│[39m   1939 │   │   │   │                                                         [31m│
+[31m│[39m   1940 │   │   │   │   [94mif[39m (                                                  [31m│
+[31m│[39m   1941 │   │   │   │   │   args.logging_nan_inf_filter                       [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m /home/xxm/anaconda3/envs/deepspeed/lib/python3.9/site-packages/transformers/ [31m│
+[31m│[39m [1mtrainer.py[22m:[94m2770[39m in [92mtraining_step[39m                                             [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m   2767 │   │   │   [94mwith[39m amp.scale_loss(loss, [96mself[39m.optimizer) [94mas[39m scaled_loss: [31m│
+[31m│[39m   2768 │   │   │   │   scaled_loss.backward()                                [31m│
+[31m│[39m   2769 │   │   [94melse[39m:                                                         [31m│
+[31m│[39m [31m❱ [39m2770 │   │   │   [96mself[39m.accelerator.backward(loss)                           [31m│
+[31m│[39m   2771 │   │                                                                 [31m│
+[31m│[39m   2772 │   │   [94mreturn[39m loss.detach() / [96mself[39m.args.gradient_accumulation_steps  [31m│
+[31m│[39m   2773                                                                       [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m /home/xxm/anaconda3/envs/deepspeed/lib/python3.9/site-packages/accelerate/[1mac[22m [31m│
+[31m│[39m [1mcelerator.py[22m:[94m1819[39m in [92mbackward[39m                                                [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m   1816 │   │   [94melif[39m [96mself[39m.distributed_type == DistributedType.MEGATRON_LM:    [31m│
+[31m│[39m   1817 │   │   │   [94mreturn[39m                                                    [31m│
+[31m│[39m   1818 │   │   [94melif[39m [96mself[39m.scaler [95mis[39m [95mnot[39m [94mNone[39m:                                 [31m│
+[31m│[39m [31m❱ [39m1819 │   │   │   [96mself[39m.scaler.scale(loss).backward(**kwargs)                [31m│
+[31m│[39m   1820 │   │   [94melse[39m:                                                         [31m│
+[31m│[39m   1821 │   │   │   loss.backward(**kwargs)                                   [31m│
+[31m│[39m   1822                                                                       [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m /home/xxm/anaconda3/envs/deepspeed/lib/python3.9/site-packages/torch/[1m_tensor[22m [31m│
+[31m│[39m [1m.py[22m:[94m487[39m in [92mbackward[39m                                                          [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m    484 │   │   │   │   create_graph=create_graph,                            [31m│
+[31m│[39m    485 │   │   │   │   inputs=inputs,                                        [31m│
+[31m│[39m    486 │   │   │   )                                                         [31m│
+[31m│[39m [31m❱ [39m 487 │   │   torch.autograd.backward(                                      [31m│
+[31m│[39m    488 │   │   │   [96mself[39m, gradient, retain_graph, create_graph, inputs=inputs [31m│
+[31m│[39m    489 │   │   )                                                             [31m│
+[31m│[39m    490                                                                       [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m /home/xxm/anaconda3/envs/deepspeed/lib/python3.9/site-packages/torch/autogra [31m│
+[31m│[39m d/[1m__init__.py[22m:[94m200[39m in [92mbackward[39m                                                [31m│
+[31m│[39m                                                                              [31m│
+[31m│[39m   197 │   # The reason we repeat same the comment below is that              [31m│
+[31m│[39m   198 │   # some Python versions print out the first line of a multi-line fu [31m│
+[31m│[39m   199 │   # calls in the traceback and some print out the last line          [31m│
+[31m│[39m [31m❱ [39m200 │   Variable._execution_engine.run_backward(  # Calls into the C++ eng [31m│
+[31m│[39m   201 │   │   tensors, grad_tensors_, retain_graph, create_graph, inputs,    [31m│
+[31m│[39m   202 │   │   allow_unreachable=[94mTrue[39m, accumulate_grad=[94mTrue[39m)  # Calls into th [31m│
+[31m│[39m   203                                                                        [31m│
+[31m╰──────────────────────────────────────────────────────────────────────────────╯
+[1mKeyboardInterrupt

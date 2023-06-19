@@ -1,0 +1,190 @@
+CUDA_VISIBLE_DEVICES=-1 python3 src/train_sft.py \
+    --do_train \
+    --dataset estate_qa \
+    --finetuning_type lora \
+    --model_name_or_path /home/house365ai/xxm/chatglm-6b \
+    --output_dir /home/house365ai/xxm/ChatGLM-Efficient-Tuning/output/im_data5 \
+    --per_device_train_batch_size 4 \
+    --gradient_accumulation_steps 4 \
+    --lr_scheduler_type cosine \
+    --logging_steps 50 \
+    --save_steps 1000 \
+    --learning_rate 5e-5 \
+    --num_train_epochs 30.0 \
+    --fp16 \
+    --plot_loss
+
+
+CUDA_VISIBLE_DEVICES=0,1,2,3 deepspeed --num_gpus=4 src/train_sft_deepspeed.py \
+    --do_train \
+    --dataset estate_qa \
+    --finetuning_type lora \
+    --model_name_or_path /home/house365ai/xxm/chatglm-6b \
+    --output_dir /home/house365ai/xxm/ChatGLM-Efficient-Tuning/output/lora_estate_qa9 \
+    --per_device_train_batch_size 6 \
+    --gradient_accumulation_steps 4 \
+    --lr_scheduler_type cosine \
+    --logging_steps 50 \
+    --save_steps 1000 \
+    --learning_rate 5e-5 \
+    --num_train_epochs 50.0 \
+    --fp16 \
+    --plot_loss
+
+accelerate launch src/train_sft.py \
+    --do_train \
+    --dataset estate_qa \
+    --finetuning_type lora \
+    --model_name_or_path /home/house365ai/xxm/chatglm-6b \
+    --output_dir /home/house365ai/xxm/ChatGLM-Efficient-Tuning/output/lora_estate_qa8 \
+    --per_device_train_batch_size 2 \
+    --gradient_accumulation_steps 2 \
+    --lr_scheduler_type cosine \
+    --logging_steps 50 \
+    --save_steps 1000 \
+    --learning_rate 5e-5 \
+    --num_train_epochs 80.0 \
+    --fp16 \
+    --ddp_find_unused_parameters False \
+    --deepspeed_config src/conf/mydeepspeed.json \
+    --plot_loss
+
+
+
+
+CUDA_VISIBLE_DEVICES=0,1,2,3 deepspeed --num_gpus=4 src/train_sft.py \
+    --deepspeed src/conf/mydeepspeed.json \
+    --do_train \
+    --dataset estate_qa \
+    --finetuning_type lora \
+    --model_name_or_path /home/house365ai/xxm/chatglm-6b \
+    --output_dir /dev/shm/ChatGLM-Efficient-Tuning/output/lora_estate_qa13 \
+    --per_device_train_batch_size 2 \
+    --gradient_accumulation_steps 2 \
+    --lr_scheduler_type cosine \
+    --logging_steps 50 \
+    --save_steps 14040 \
+    --learning_rate 5e-5 \
+    --num_train_epochs 240.0 \
+    --fp16 \
+    --plot_loss
+
+CUDA_VISIBLE_DEVICES=0 deepspeed --master_port 5555 src/train_sft_deepspeed.py \
+    --do_train \
+    --dataset im_data0 \
+    --finetuning_type lora \
+    --model_name_or_path /home/xxm/model/new/chatglm-6b \
+    --output_dir /home/xxm/下载/ChatGLM-Efficient-Tuning/output/im_data1 \
+    --per_device_train_batch_size 4 \
+    --gradient_accumulation_steps 4 \
+    --lr_scheduler_type cosine \
+    --logging_steps 50 \
+    --save_steps 1000 \
+    --learning_rate 5e-5 \
+    --num_train_epochs 10.0 \
+    --fp16 \
+    --plot_loss
+
+CUDA_VISIBLE_DEVICES=0 python3 src/train_sft.py \
+    --do_predict \
+    --dataset estate_qa \
+    --finetuning_type lora \
+    --model_name_or_path /home/house365ai/xxm/chatglm-6b \
+    --checkpoint_dir /dev/shm/ChatGLM-Efficient-Tuning/output/lora_estate_qa13 \
+    --output_dir /home/house365ai/xxm/ChatGLM-Efficient-Tuning/output/qa13 \
+    --per_device_eval_batch_size 2 \
+    --max_samples 500 \
+    --predict_with_generate
+
+CUDA_VISIBLE_DEVICES=0 python3 src/inference_sft.py \
+    --do_predict \
+    --finetuning_type lora \
+    --model_name_or_path /home/xxm/model/new/chatglm-6b \
+    --checkpoint_dir /home/xxm/下载/ChatGLM-Efficient-Tuning/output/lora_estate_qa5 \
+    --output_dir /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/output \
+    --predict_with_generate
+
+
+###baseline
+CUDA_VISIBLE_DEVICES=0 python src/train_sft.py \
+    --do_predict \
+    --dataset test_estate_qa \
+    --finetuning_type full \
+    --model_name_or_path /home/xxm/model/new/chatglm-6b \
+    --output_dir /home/xxm/下载/ChatGLM-Efficient-Tuning/output/test \
+    --per_device_eval_batch_size 4 \
+    --max_samples 500 \
+    --predict_with_generate
+
+CUDA_VISIBLE_DEVICES=0 python src/web_demo.py \
+    --model_name_or_path /home/xxm/model/new/chatglm-6b \
+    --checkpoint_dir /home/xxm/下载/ChatGLM-Efficient-Tuning/output/lora_estate_rlhf
+
+
+奖励模型微调
+CUDA_VISIBLE_DEVICES=0 python src/train_rm.py \
+    --do_train \
+    --dataset estate_reward \
+    --finetuning_type lora \
+    --model_name_or_path /home/xxm/model/new/chatglm-6b \
+    --output_dir /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/output/lora_estate_rm2 \
+    --per_device_train_batch_size 4 \
+    --gradient_accumulation_steps 4 \
+    --lr_scheduler_type cosine \
+    --logging_steps 10 \
+    --save_steps 1248 \
+    --learning_rate 1e-5 \
+    --num_train_epochs 20.0 \
+    --fp16
+
+CUDA_VISIBLE_DEVICES=0 python3 src/inference_rm.py \
+    --do_predict \
+    --finetuning_type lora \
+    --model_name_or_path /home/xxm/model/new/chatglm-6b \
+    --checkpoint_dir /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/output/lora_estate_rm2 \
+    --output_dir /home/xxm/下载/ChatGLM-Efficient-Tuning/output \
+    --predict_with_generate
+
+CUDA_VISIBLE_DEVICES=0 python3 src/inference_rm1.py \
+    --do_train \
+    --finetuning_type lora \
+    --model_name_or_path /home/xxm/model/new/chatglm-6b \
+    --checkpoint_dir /home/xxm/下载/ChatGLM-Efficient-Tuning/output/lora_estate_qa5 \
+    --reward_model /home/xxm/下载/chatglm_project/ChatGLM-Efficient-Tuning/output/lora_estate_rm2 \
+    --output_dir /home/xxm/下载/ChatGLM-Efficient-Tuning/output \
+    --predict_with_generate
+
+
+CUDA_VISIBLE_DEVICES=0 python src/infer.py \
+    --model_name_or_path /home/xxm/model/new/chatglm-6b \
+    --checkpoint_dir /home/xxm/下载/ChatGLM-Efficient-Tuning/output/lora_estate_rlhf
+
+ppo算法微调
+CUDA_VISIBLE_DEVICES=0,1 python3 src/train_ppo.py \
+    --do_train \
+    --dataset estate_qa \
+    --finetuning_type lora \
+    --model_name_or_path /home/house365ai/xxm/chatglm-6b \
+    --checkpoint_dir /home/house365ai/xxm/chatglm_project/ChatGLM-Efficient-Tuning/output/lora_estate_qa5 \
+    --reward_model /home/house365ai/xxm/chatglm_project/ChatGLM-Efficient-Tuning/output/lora_estate_rm2 \
+    --output_dir /home/house365ai/xxm/chatglm_project/ChatGLM-Efficient-Tuning/output/lora_estate_rlhf \
+    --per_device_train_batch_size 2 \
+    --gradient_accumulation_steps 1 \
+    --lr_scheduler_type cosine \
+    --logging_steps 10 \
+    --save_steps 281 \
+    --learning_rate 1e-5 \
+    --num_train_epochs 0.5 \
+    --quantization_bit 8
+
+CUDA_VISIBLE_DEVICES=0 python src/train_ppo.py \
+    --do_predict \
+    --dataset estate_rlfh \
+    --finetuning_type lora \
+    --model_name_or_path /home/xxm/model/new/chatglm-6b \
+    --checkpoint_dir /home/xxm/下载/ChatGLM-Efficient-Tuning/output/lora_estate_rlhf \
+    --reward_model /home/xxm/下载/ChatGLM-Efficient-Tuning/output/lora_estate_rm/checkpoint-1500 \
+    --output_dir /home/xxm/下载/ChatGLM-Efficient-Tuning/output/rlhf \
+    --per_device_eval_batch_size 1 \
+    --max_samples 500 \
+    --predict_with_generate
